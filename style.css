@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  background: #f4f4f4;
+}
+
+.calculator {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 280px;
+}
+
+.calculator input,
+.calculator select {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.calculator button {
+  width: 94%;
+  padding: 10px;
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 12px;
+  font-weight: bold;
+}

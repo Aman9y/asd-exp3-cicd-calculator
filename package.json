@@ -1,0 +1,12 @@
+{
+  "name": "asd-exp3-cicd-calculator",
+  "version": "1.0.0",
+  "description": "ASD Experiment 3 - CI/CD pipeline demo calculator app",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

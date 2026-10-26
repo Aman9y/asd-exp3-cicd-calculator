@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ASD Exp 3 - CI/CD Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculator</h1>
+    <input type="number" id="a" placeholder="First number" />
+    <select id="op">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="b" placeholder="Second number" />
+    <button id="calc-btn">=</button>
+    <div id="result"></div>
+  </div>
+  <script src="calculator.js"></script>
+  <script>
+    document.getElementById("calc-btn").addEventListener("click", function () {
+      const a = parseFloat(document.getElementById("a").value);
+      const b = parseFloat(document.getElementById("b").value);
+      const op = document.getElementById("op").value;
+      const resultEl = document.getElementById("result");
+      try {
+        resultEl.textContent = "Result: " + calculate(op, a, b);
+      } catch (e) {
+        resultEl.textContent = "Error: " + e.message;
+      }
+    });
+  </script>
+</body>
+</html>
